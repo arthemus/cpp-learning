@@ -9,11 +9,13 @@ using namespace std;
 
 void SimpleHello()
 {
-  cout << "Hello World!";
+  cout << "Hello World!" << endl;
 }
 
 void MultipleLines()
 {
+  // set up cout to right-align
+  cout << setiosflags(ios::right);
   // the first for-loop will handle the rows
   for (int i = 0; i < 6; i++)
   {
@@ -31,7 +33,7 @@ int main()
 {
   cout << "Running a simple hello world line..." << endl;
   SimpleHello();
-  cout << endl << "Running multiple lines of hello world..." << endl;
+  cout << "Running multiple lines of hello world..." << endl;
   MultipleLines();
   cout << endl;
   return 0;
