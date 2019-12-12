@@ -7,18 +7,15 @@
 
 using namespace std;
 
-void SimpleHello()
-{
+void SimpleHello() {
   cout << "Hello World!" << endl;
 }
 
-void MultipleLines()
-{
+void MultipleLines() {
   // set up cout to right-align
   cout << setiosflags(ios::right);
   // the first for-loop will handle the rows
-  for (int i = 0; i < 6; i++)
-  {
+  for (int i = 0; i < 6; i++) {
     // the second for loop will handle the columns
     for (int j = 0; j < 4; j++)
       // setw(int) sets the column width
@@ -29,8 +26,7 @@ void MultipleLines()
   }
 }
 
-int main()
-{
+int main() {
   cout << "Running a simple hello world line..." << endl;
   SimpleHello();
   cout << "Running multiple lines of hello world..." << endl;
